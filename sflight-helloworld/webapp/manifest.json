@@ -1,7 +1,7 @@
 {
-  "_version": "1.28.0",
+  "_version": "1.37.0",
   "sap.app": {
-    "id": "sflight.helloworld",
+    "id": "telkomsigma.sap.sflighthelloworld",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -13,7 +13,7 @@
     "sourceTemplate": {
       "id": "@sap-ux/fiori-elements-writer:lrop",
       "version": "0.3.6",
-      "toolsId": "bdb3902b-5741-48b1-b55a-6192bbf5c0f5"
+      "toolsId": "4ef62a2c-7734-44ae-b427-c7c4962504de"
     },
     "dataSources": {
       "mainService": {
@@ -63,7 +63,7 @@
   "sap.ui5": {
     "flexEnabled": true,
     "dependencies": {
-      "minUI5Version": "1.84.0",
+      "minUI5Version": "1.96.6",
       "libs": {
         "sap.m": {},
         "sap.ui.core": {},
@@ -82,7 +82,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "sflight.helloworld.i18n.i18n"
+          "bundleName": "telkomsigma.sap.sflighthelloworld.i18n.i18n"
         }
       },
       "": {

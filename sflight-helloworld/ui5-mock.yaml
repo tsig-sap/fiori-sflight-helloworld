@@ -2,35 +2,28 @@
 
 specVersion: "2.5"
 metadata:
-  name: sflight.helloworld
+  name: telkomsigma.sap.sflighthelloworld
 type: application
-framework:
-  name: SAPUI5
-  version: 1.96.6
-  libraries:
-    - name: sap.m
-    - name: sap.ui.core
-    - name: sap.ushell
-    - name: sap.f
-    - name: sap.ui.comp
-    - name: sap.ui.generic.app
-    - name: sap.suite.ui.generic.template
-    - name: themelib_sap_fiori_3
 server:
   customMiddleware:
+    - name: fiori-tools-proxy
+      afterMiddleware: compression
+      configuration:
+        ignoreCertError: false # If set to true, certificate errors will be ignored. E.g. self-signed certificates will be accepted
+        ui5:
+          path:
+            - /resources
+            - /test-resources
+          url: https://ui5.sap.com
+        backend:
+          - path: /sap
+            url: https://pjadev.ptk.hec.ondemand.com/
     - name: fiori-tools-appreload
       afterMiddleware: compression
       configuration:
         port: 35729
         path: webapp
         delay: 300
-    - name: fiori-tools-proxy
-      afterMiddleware: compression
-      configuration:
-        ignoreCertError: false # If set to true, certificate errors will be ignored. E.g. self-signed certificates will be accepted
-        backend:
-          - path: /sap
-            url: https://pjadev.ptk.hec.ondemand.com/
     - name: sap-fe-mockserver
       beforeMiddleware: csp
       configuration:
@@ -39,8 +32,3 @@ server:
           metadataXmlPath: ./webapp/localService/metadata.xml
           mockdataRootPath: ./webapp/localService/data
           generateMockData: true
-    - name: fiori-tools-preview
-      afterMiddleware: fiori-tools-appreload
-      configuration:
-        component: sflight.helloworld
-        ui5Theme: sap_fiori_3

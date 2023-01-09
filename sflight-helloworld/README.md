@@ -1,23 +1,23 @@
 ## Application Details
 |               |
 | ------------- |
-|**Generation Date and Time**<br>Mon Jan 09 2023 14:04:21 GMT+0700 (Western Indonesia Time)|
+|**Generation Date and Time**<br>Mon Jan 09 2023 22:17:12 GMT+0700 (Western Indonesia Time)|
 |**App Generator**<br>@sap/generator-fiori-elements|
 |**App Generator Version**<br>1.6.4|
 |**Generation Platform**<br>Visual Studio Code|
 |**Floorplan Used**<br>List Report Object Page V2|
 |**Service Type**<br>SAP System (ABAP On Premise)|
 |**Service URL**<br>https://pjadev.ptk.hec.ondemand.com//sap/opu/odata/sap/ZCDS_SFLIGHT_CDS
-|**Module Name**<br>sflight.helloworld|
+|**Module Name**<br>sflight-helloworld|
 |**Application Title**<br>App Title|
-|**Namespace**<br>|
+|**Namespace**<br>telkomsigma.sap|
 |**UI5 Theme**<br>sap_fiori_3|
-|**UI5 Version**<br>1.84.0|
+|**UI5 Version**<br>1.96.6|
 |**Enable Code Assist Libraries**<br>False|
 |**Add Eslint configuration**<br>False|
 |**Main Entity**<br>ZCDS_SFLIGHT|
 
-## sflight.helloworld
+## sflight-helloworld
 
 A Fiori application.
 

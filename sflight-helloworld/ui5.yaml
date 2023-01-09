@@ -2,7 +2,7 @@
 
 specVersion: "2.5"
 metadata:
-  name: sflight.helloworld
+  name: telkomsigma.sap.sflighthelloworld
 type: application
 server:
   customMiddleware:
@@ -27,5 +27,5 @@ server:
     - name: fiori-tools-preview
       afterMiddleware: fiori-tools-appreload
       configuration:
-        component: sflight.helloworld
+        component: telkomsigma.sap.sflighthelloworld
         ui5Theme: sap_fiori_3

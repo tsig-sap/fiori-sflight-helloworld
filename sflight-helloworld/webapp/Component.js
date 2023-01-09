@@ -3,7 +3,7 @@ sap.ui.define(
     function (Component) {
         "use strict";
 
-        return Component.extend("sflight.helloworld.Component", {
+        return Component.extend("telkomsigma.sap.sflighthelloworld.Component", {
             metadata: {
                 manifest: "json"
             }
